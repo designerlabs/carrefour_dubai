@@ -1,0 +1,59 @@
+body{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.navigation{
+    margin: 30px 100px;
+}
+
+
+.search{
+    margin-top: 20px;
+    width:50px;
+    height: 40px;
+    border-radius: 10px;
+    background:#f0f7fe;
+}
+
+.search span{
+    text-align: center;
+    margin: 10px auto;
+    color: #05549f;
+    font-size: 18px;
+    width: 50px;
+}
+
+.login_container{
+    width: 400px;
+    height:410px;
+    margin: 70px auto;
+    border:3px solid #f6f6f6;
+    border-radius: 3px;
+}
+
+.login_title{
+    margin: 30px 0 10px 0;
+}
+
+.login_container h1{
+    font-family: 'Open Sans Semibold', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 10px;
+    color: #414141;
+}
+
+.login_container h3{
+    font-family: 'Open Sans Regular', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+    color: #333333;
+}
+
+.login_fields{
+    width: 300px;
+    margin: 0 auto;
+}
