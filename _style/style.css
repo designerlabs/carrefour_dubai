@@ -8,12 +8,16 @@ body{
     margin: 30px 100px;
 }
 
+.navbar-right{
+    margin-right: 0px !important;
+}
+
 
 .search{
     margin-top: 20px;
     width:50px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
     background:#f0f7fe;
 }
 
@@ -27,9 +31,10 @@ body{
 
 .login_container{
     width: 400px;
-    height:410px;
-    margin: 70px auto;
-    border:3px solid #f6f6f6;
+    height: 410px;
+    margin: auto;
+    margin-top: 50px;
+    border: 3px solid #f6f6f6;
     border-radius: 3px;
 }
 
@@ -56,4 +61,99 @@ body{
 .login_fields{
     width: 300px;
     margin: 0 auto;
+    margin-top: 60px;
+}
+
+
+.input-group{ 
+    position:relative; 
+    margin-bottom:30px; 
+}
+
+input{
+    font-size:18px;
+    padding:10px 10px 10px 10px;
+    display:block;
+    width:300px;
+    border-radius: 5px;
+    border:1px solid #f6f6f6;
+}
+
+input:focus{ 
+    outline:none;
+    box-shadow: #add7ff 0px 0px 20px 0px;
+}
+
+label{
+    color:#ddd; 
+    font-size:14px;
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-weight:100 !important;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top:-30px;
+    font-size:14px;
+    font-style: italic;
+    color:#414141;
+  }
+
+  input:focus, input:valid{
+    border: 1px solid #05549f;
+  }
+  
+
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+
+.checkbox{
+    width: 10px !important;
+    display: inline-block !important;
+}
+
+.forgot_pass{
+    display: inline-flex;
+    float: right;
+    font-family: 'Open Sans Regular',sans-serif;
+    font-size: 12px;
+    color: #05549f
+}
+
+.keep_login{
+    display: inline-flex;
+}
+
+.keep_login span{
+    font-family: 'Open Sans Regular',sans-serif;
+    font-size: 12px;
+    color: #414141;
 }
