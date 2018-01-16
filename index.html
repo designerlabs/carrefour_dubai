@@ -15,6 +15,8 @@
 
     <!-- external script -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/html5-form-validation/dist/jquery.validation.min.js"></script>
+
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!--  script -->
@@ -25,17 +27,19 @@
            
             <div class="navbar-header">
                 <a class="brand_logo" href="#">
-                    <!-- <img src="_images/logo.png" alt="Carrefour - Logo"> -->
+                    <img src="_images/logo.png" alt="Carrefour - Logo">
                 </a>
             </div>
             
-           
+  
             <div class="nav navbar-nav navbar-right">
-                <div class="search">
-                    <span class="glyphicon glyphicon-search"></span>
-                </div>
+                <form class="searchbox">
+                    <input type="search" name="search" class="searchbox-input" onkeyup="buttonClk();">
+                    <input type="submit" class="searchbox-submit" value="GO">
+                    <span class="searchbox-icon"><i class="glyphicon glyphicon-search"></i></span>
+                </form>
             </div>
-       
+ 
         </nav>
 
           
@@ -47,30 +51,30 @@
             </div>
             
             <div class="login_fields">
-                <form action="">
+                <form id="form-signin_v2" name="form-signin_v2" method="POST" novalidate>
                     <div class="input-group">      
-                        <input type="text" required>
+                        <input  name="signin_v2[username]" type="text" data-validation="[NOTEMPTY]" data-validation-message="Required field" value="" required>
                         <span class="highlight"></span>
                         <label>Username</label>
                     </div>
                     
                     <div class="input-group">      
-                        <input type="text" required>
+                        <input name="signin_v2[password]" type="password" data-validation="[NOTEMPTY]" data-validation-message="Required field" value="" required>
                         <span class="highlight"></span>
                         <label>Password</label>
                     </div>
 
-                    <!-- <div class="keep_login">
-                        <input class="checkbox" type="checkbox" />
-                        <span>Keep me logged in</span>
-                    </div> -->
                     
                     <label class="keep_login">Keep me logged in
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="checkmark"></span>
                     </label>
                     <div class="forgot_pass">
                         Forgot password?
+                    </div>
+                    <input type="hidden" id="signin_v2-errors" value="">
+                    <div class="signin_container">
+                        <button type="submit" class="btn btn-lg btn-block btn-color">SIGN IN</button>
                     </div>
                 </form>
             </div>  
