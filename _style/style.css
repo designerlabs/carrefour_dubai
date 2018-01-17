@@ -1,6 +1,5 @@
 body{
     background: #fff;
-    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -27,17 +26,13 @@ body{
 }
 
 .login_container h1{
-    font-family: 'Open Sans Semibold', sans-serif;
     text-align: center;
-    font-size: 24px;
     margin: 0 10px;
     color: #414141;
 }
 
 .login_container h3{
-    font-family: 'Open Sans Regular', sans-serif;
     text-align: center;
-    font-size: 14px;
     margin: 10px;
     color: #333333;
 }
@@ -55,7 +50,6 @@ body{
 }
 
 input{
-    font-size:18px;
     padding:10px 10px 10px 10px;
     display:block;
     width:300px;
@@ -71,8 +65,6 @@ input:focus{
 
 label{
     color:#ddd; 
-    font-size:14px;
-    font-family: 'Open Sans Semibold', sans-serif;
     font-weight:100 !important;
     position:absolute;
     pointer-events:none;
@@ -95,9 +87,46 @@ label{
   input:focus, input:valid{
     border: 1px solid #05549f;
   }
-  
 
+
+  /* font-family and font-size */
+
+  .opensans{
+    font-family: 'Open Sans', sans-serif;
+  }
   
+  .opensans_reg{
+    font-family: 'Open Sans Regular',sans-serif;
+  }
+
+  .opensans_semibold{
+    font-family: 'Open Sans Semibold', sans-serif;
+  }
+
+  .px12{
+    font-size: 12px;
+  }
+
+  .px14{
+    font-size: 14px;
+  }
+
+  .px18{
+    font-size: 18px;
+  }
+
+  .px20{
+    font-size: 20px;
+  }
+
+  .px22{
+    font-size: 22px;
+  }
+
+  .px24{
+    font-size: 24px;
+  }
+
   /* active state */
   input:focus ~ .bar:before, input:focus ~ .bar:after {
     width:50%;
@@ -129,8 +158,6 @@ label{
 .forgot_pass{
     display: inline-block;
     float: right;
-    font-family: 'Open Sans Regular',sans-serif;
-    font-size: 12px;
     color: #05549f
 }
 
@@ -141,15 +168,12 @@ label{
     padding-left: 30px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     pointer-events:visible; 
     top: 0px;
-    font-family: 'Open Sans Regular',sans-serif;
-    font-size: 12px;
     color: #414141;
     left: 0px;
 }
@@ -208,8 +232,6 @@ label{
 }
 
 .keep_login span{
-    font-family: 'Open Sans Regular',sans-serif;
-    font-size: 12px;
     color: #414141;
 }
 
@@ -220,8 +242,6 @@ label{
 .btn-color{
     background:#05549f;
     color: #fff;
-    font-family: 'Open Sans Semibold', sans-serif;
-    font-size: 20px;
     border-radius: 3px !important;
 }
 
@@ -348,6 +368,12 @@ input.error{
     position: absolute;
     top: 0px;
     font-size: 18px;
+}
+
+.horizontal_line{
+    margin:67px 0 70px 0;
+    color: #f6f6f6;
+    background: #f6f6f6;
 }
 .products{
     width: 220px;

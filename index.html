@@ -22,7 +22,7 @@
     <!--  script -->
     <script src="_js/script.js"></script>
 </head>
-<body>
+<body class="opensans">
         <nav role="navigation" class="navigation navbar">
            
             <div class="navbar-header">
@@ -46,41 +46,41 @@
         <div class="login_container">
             
             <div class="login_title">
-                <h1>Sign In Now</h1>
-                <h3>Unlock awesome features!</h3>
+                <h1 class="opensans_semibold px24">Sign In Now</h1>
+                <h3 class="opensans_reg px14">Unlock awesome features!</h3>
             </div>
             
             <div class="login_fields">
                 <form id="form-signin_v2" name="form-signin_v2" method="POST" novalidate>
                     <div class="input-group">      
-                        <input  name="signin_v2[username]" type="text" data-validation="[NOTEMPTY]" data-validation-message="Required field" value="" required>
+                        <input class="px18" name="signin_v2[username]" type="text" data-validation="[NOTEMPTY]" data-validation-message="Required field" value="" required>
                         <span class="highlight"></span>
-                        <label>Username</label>
+                        <label class="opensans_semibold px14">Username</label>
                     </div>
                     
                     <div class="input-group">      
-                        <input name="signin_v2[password]" type="password" data-validation="[NOTEMPTY]" data-validation-message="Required field" value="" required>
+                        <input class="px18" name="signin_v2[password]" type="password" data-validation="[NOTEMPTY]" data-validation-message="Required field" value="" required>
                         <span class="highlight"></span>
-                        <label>Password</label>
+                        <label opensans_semibold px14>Password</label>
                     </div>
 
                     
-                    <label class="keep_login">Keep me logged in
+                    <label class="keep_login opensans_reg px12">Keep me logged in
                         <input type="checkbox" checked>
-                        <span class="checkmark"></span>
+                        <span class="checkmark opensans_reg px12"></span>
                     </label>
-                    <div class="forgot_pass">
+                    <div class="forgot_pass opensans_reg px12">
                         Forgot password?
                     </div>
-                    <input type="hidden" id="signin_v2-errors" value="">
+                    <input class="px18" type="hidden" id="signin_v2-errors" value="">
                     <div class="signin_container">
-                        <button type="submit" class="btn btn-lg btn-block btn-color">SIGN IN</button>
+                        <button type="submit" class="btn btn-lg btn-block btn-color opensans_semibold px20">SIGN IN</button>
                     </div>
                 </form>
             </div>  
         </div>
         <div class="product_gallery container">
-            <hr>
+            <hr class="horizontal_line">
             <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
                 <div class="products">
                     <img src="_images/product.jpg" alt="">
